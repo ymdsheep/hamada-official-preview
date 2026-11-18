@@ -1,0 +1,1 @@
+if(`IntersectionObserver`in window){let e=new IntersectionObserver(t=>{for(let{isIntersecting:n,target:r}of t)n&&(r.setAttribute(`data-revealed`,``),e.unobserve(r))});for(let t of document.querySelectorAll(`[data-reveal]`))e.observe(t)}
